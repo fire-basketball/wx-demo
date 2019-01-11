@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.ligh</groupId>
 	<artifactId>wx-demo</artifactId>
-	<version>0.0.1-SNAPSH  OT</version>
+	<version>1.0</version>
 	<name>wx-demo</name>
 	<description>Demo project for Spring Boot</description>
 
