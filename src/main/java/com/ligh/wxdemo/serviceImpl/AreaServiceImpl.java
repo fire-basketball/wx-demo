@@ -37,7 +37,7 @@ public class AreaServiceImpl implements AreaService{
 
     @Override
     public boolean insertArea(Area area) {
-        if(area.getAreaName()==null && !"".equals(area.getAreaName())){
+        if(area.getAreaName()!=null && !"".equals(area.getAreaName())){
             area.setCreateTime(new Date());
             area.setLastEditTime(new Date());
             try{
@@ -58,7 +58,7 @@ public class AreaServiceImpl implements AreaService{
 
     @Override
     public boolean updateArea(Area area) {
-        if(area.getAreaId()==null && !"".equals(area.getAreaId())){
+        if(area.getAreaId()!=null && !"".equals(area.getAreaId())){
             area.setLastEditTime(new Date());
             int i = areaMapper.updateByPrimaryKeySelective(area);
             try{
